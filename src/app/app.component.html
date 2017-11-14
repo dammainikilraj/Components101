@@ -1,0 +1,48 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center;background-color:lightblue;color:white">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+ 
+</div>
+<h2 id="first">First Component Values....!</h2>
+<p>Name: {{myObject.name}}</p>
+<p>Age : {{myObject.age}}</p>
+<p>Gender:{{myObject.gender}}</p>
+
+
+<h3>
+  Displaying Array Values Using ngFor
+</h3>
+<ul>
+<li *ngFor="let arr of myArr">{{arr}}</li>
+
+</ul>
+
+<h3>
+  Property Binding......!</h3>
+
+<p>Image Property binding:</p>
+  <img width="60px" src="{{angularLogo}}" >
+<p>Disabling button using property binding: </p>
+<button [disabled]="buttonStatus">My Button</button>
+
+<h3>Event Binding.......! </h3>
+<button (click)="myEvent($event)">Click Me</button>Click and see the console
+<br>
+<h3>Css Class Binding......!</h3>
+<p [class]="helloClass">Hello..!</p>
+
+<h3>Service calling......!</h3>
+<h5>Calling method from the service</h5>
+<p> {{someProperty}}</p>
+<h5>Calling array from the service</h5>
+<ul>
+<li *ngFor="let arr of myArray">{{arr}}</li>
+
+</ul>
+
+
+
+
+<app-my-new-component></app-my-new-component>
